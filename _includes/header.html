@@ -1,0 +1,141 @@
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url({{ "images/IMG_0266.JPG" | prepend: site.baseurl }})">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+          <img src="{{ "images/fran_profile.JPG" | prepend: site.baseurl }}" class="user-image" alt="Francieli's Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+<nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+<li class="navigation__item">
+                <a href="publications.html" title="Publications">Publications</a></li>
+
+            </ul>
+          </nav>
+
+        <div class="navigation-wrapper">
+
+
+                 <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+	    {% if site.author.rg_username %}
+              <li class="navigation__item">
+                <a href="https://www.researchgate.net/profile/{{ site.author.rg_username }}" title="{{ site.author.rg_username }} @ Research Gate" target="_blank">
+                  <i class="flaticon-researchgate-draw-logo"></i>
+                  <span class="label">Research Gate</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.linkedin_username %}
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} @ LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+
+	    {% if site.author.scholar_username %}
+              <li class="navigation__item">
+                <a href="http://scholar.google.com.br/citations?user={{ site.author.scholar_username }}" title="{{ site.author.scholar_username }} @ Google Scholar" target="_blank">
+                  <i class="flaticon-google-scholar"></i>
+                  <span class="label">Google Scholar</span>
+                </a>
+              </li>
+            {% endif %}
+
+	    {% if site.author.lattes %}
+              <li class="navigation__item">
+                <a href="http://lattes.cnpq.br/{{ site.author.lattes }}" title="CV @ Lattes platform (in Portuguese)" target="_blank">
+                  <i class="flaticon-avatar"></i>
+                  <span class="label">Curriculo Lattes</span>
+                </a>
+              </li>
+            {% endif %}
+
+	    {% if site.author.cv_file %}
+              <li class="navigation__item">
+                <a href="{{ site.url }}{{ site.author.cv_file }}" title="CV.pdf (in English)" target="_blank">
+                  <i class="flaticon-avatar"></i>
+                  <span class="label">CV.pdf</span>
+                </a>
+              </li>
+            {% endif %}
+
+
+            {% if site.author.bitbucket_username %}
+              <li class="navigation__item">
+                <a href="https://bitbucket.org/{{ site.author.bitbucket_username }}" title="{{ site.author.bitbucket_username }} @ Bitbucket" target="_blank">
+                  <i class="flaticon-bitbucket"></i>
+                  <span class="label">Bitbucket</span>
+                </a>
+              </li>
+            {% endif %}
+
+	    {% if site.author.github_username %}
+              <li class="navigation__item">
+                <a href="https://github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} @ Github" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">Github</span>
+                </a>
+              </li>
+            {% endif %}
+
+
+            {% if site.author.flickr_username %}
+              <li class="navigation__item">
+                <a href="https://www.flickr.com/photos/{{ site.author.flickr_username }}" title="{{ site.author.flickr_username }} @ Flickr" target="_blank">
+                  <i class="icon icon-social-flickr"></i>
+                  <span class="label">Flickr</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+			
+          
+            </ul>
+          </nav>
+<br>
+<nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+<li class="navigation__item">
+                <a href="http://www.inf.ufrgs.br/~fzboito/agios.html" title="AGIOS">AGIOS</a></li>
+<li class="navigation__item">
+                <a href="http://www.inf.ufrgs.br/~fzboito/serra.html" title="SeRRa">SeRRa</a></li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+<myfooter>Template "Jekyll-Uno" by Josh Gerdes. Icons made by Freepik and Darius Dan from www.flaticon.com.</myfooter>
+</header>
