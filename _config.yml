@@ -1,0 +1,43 @@
+# Site settings
+title: Francieli Zanon Boito
+description: '<b>Ph.D. in Computer Science</b> <br> University of Grenoble Alpes (France) and Federal University of Rio Grande do Sul (Brazil), 2015.'
+url: 'http://www.inf.ufrgs.br/~fzboito/'
+baseurl: ''
+google_analytics: 'UA-89939926-1'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Francieli Zanon Boito'
+  email: francieli.zanon@inf.ufrgs.br
+  linkedin_username:  francieli-zanon-boito-173442135
+  flickr_username:  francielizanon
+  bitbucket_username:  francielizanon
+  scholar_username:  OPgcgkQAAAAJ
+  rg_username:  Francieli_Zanon_Boito
+  lattes:  5324734992086903
+  github_username: francielizanon
+  cv_file: CV_FrancieliBoito.pdf
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
