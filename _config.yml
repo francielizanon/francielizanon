@@ -1,6 +1,7 @@
 # Site settings
 title: Francieli Zanon Boito
-description: '<b>Marie Skłodowska-Curie Fellow @ INRIA Grenoble</b>'
+#description: '<b>Marie Skłodowska-Curie Fellow @ INRIA Grenoble</b>'
+description: '<b>Associate professor @ Université de Bordeaux</b>'
 url: 'https://francielizanon.github.io/'
 baseurl: ''
 google_analytics: 'UA-89939926-1'
